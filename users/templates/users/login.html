@@ -11,17 +11,17 @@ You will need to pip install crispy-bootstrap4 and add crispy_bootstrap4 to your
 
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">
-                    Join Today
+                    Log in
                 </legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit"> Sign Up</button>
+                <button class="btn btn-outline-info" type="submit"> Log In</button>
             </div>
         </form>
         <div class="border-top pt-3">
             <small class="text-muted">
-                Already have an account? <a href="{% url login %}" class="ml-2">Sign In</a>
+                Not Signed Up? <a href="{% url 'register' %}" class="ml-2">Sign Up now</a>
             </small>
         </div>
     </div>

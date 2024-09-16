@@ -1,0 +1,9 @@
+{% extends "blog/base.html" %}
+{% load crispy_forms_tags %} 
+<!--As of django-crispy-forms 2.0 the template packs are now in separate packages.
+
+You will need to pip install crispy-bootstrap4 and add crispy_bootstrap4 to your list of-->
+
+{% block content %}
+    {{ user.username }}
+{% endblock content %}
